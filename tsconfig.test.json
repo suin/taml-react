@@ -1,0 +1,15 @@
+{
+  "extends": ["@tsconfig/bun", "@tsconfig/strictest"],
+  "compilerOptions": {
+    "composite": true,
+    "rootDir": "./ts",
+    "jsx": "react-jsx",
+    "allowImportingTsExtensions": false,
+    "noEmit": true,
+    "skipLibCheck": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "types": ["bun-types", "@testing-library/jest-dom"]
+  },
+  "include": ["ts/**/*.ts", "ts/**/*.tsx"],
+  "references": [{ "path": "tsconfig.build.json" }]
+}

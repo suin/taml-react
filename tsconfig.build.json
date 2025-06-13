@@ -1,0 +1,21 @@
+{
+  "extends": ["@tsconfig/node22", "@tsconfig/strictest"],
+  "compilerOptions": {
+    "composite": true,
+    "outDir": "./js",
+    "rootDir": "./ts",
+    "inlineSourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "noEmitOnError": true,
+    "jsx": "react-jsx",
+    "module": "ES2022",
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": false,
+    "noEmit": false,
+    "skipLibCheck": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"]
+  },
+  "include": ["ts/**/*.ts", "ts/**/*.tsx"],
+  "exclude": ["ts/**/*.test.*", "ts/**/*.spec.*", "ts/**/__tests__/*"]
+}

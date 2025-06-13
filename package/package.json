@@ -1,0 +1,62 @@
+{
+  "name": "@taml/react",
+  "version": "1.0.0-alpha.1",
+  "description": "React component for rendering TAML (Terminal ANSI Markup Language) as styled JSX elements",
+  "type": "module",
+  "main": "./js/index.js",
+  "module": "./js/index.js",
+  "types": "./js/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./js/index.d.ts",
+      "import": "./js/index.js",
+      "require": "./js/index.js"
+    },
+    "./styles.css": "./js/styles.css"
+  },
+  "files": [
+    "js/**/*",
+    "ts/**/*",
+    "!ts/**/*.test.*",
+    "!ts/**/*.spec.*",
+    "!ts/**/__tests__/*"
+  ],
+  "keywords": [
+    "react",
+    "taml",
+    "terminal-ansi-markup-language",
+    "terminal",
+    "colors",
+    "styling",
+    "jsx",
+    "component"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "bun test",
+    "build": "tsc -b && cp ts/styles.css js/",
+    "clean": "rm -rf js *.tsbuildinfo",
+    "dev": "tsc -b --watch"
+  },
+  "dependencies": {
+    "@taml/ast": "1.0.0",
+    "@taml/parser": "1.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^15.7.4",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "14.3.1",
+    "@tsconfig/bun": "^1.0.8",
+    "@tsconfig/node22": "^22.0.2",
+    "@tsconfig/strictest": "^2.0.5",
+    "@types/bun": "latest",
+    "@types/react": "^18.3.12",
+    "react": "^18.3.1",
+    "react-dom": "18.3.1",
+    "typescript": "^5"
+  }
+}
