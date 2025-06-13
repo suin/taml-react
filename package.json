@@ -1,6 +1,6 @@
 {
   "name": "@taml/react",
-  "version": "1.0.0-alpha.1",
+  "version": "1.0.0",
   "description": "React component for rendering TAML (Terminal ANSI Markup Language) as styled JSX elements",
   "keywords": [
     "react",
